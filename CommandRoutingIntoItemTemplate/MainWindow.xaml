@@ -31,6 +31,9 @@
 			</ListBox.Items>
 		</ListBox>
 
-		<Button Grid.Row="2" Command="local:Commands.CommandTest">Put focus on TestBlock and click here to see if command occurs</Button>
+		<StackPanel Grid.Row="2" Orientation="Horizontal">
+			<Button Command="local:Commands.CommandTest">Put focus on TestBlock and click here to see if command occurs</Button>
+			<Button Click="AddHack">Hack</Button>
+		</StackPanel>
 	</Grid>
 </Window>

@@ -20,11 +20,28 @@ namespace CommandRoutingIntoItemTemplate
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		// ******************************************************************
 		public MainWindow()
 		{
 			// Test pour ajouter bouton
 			// Modif pour la prod
 			InitializeComponent();
 		}
+
+		// ******************************************************************
+		private void AddHack(object sender, RoutedEventArgs e)
+		{
+			this.ApplyToEachVisualChildRecursively(dp =>
+			{
+				var userControl = dp as UserControl;
+				if (userControl != null)
+				{
+					CommandBindings.AddRange(userControl.CommandBindings);
+				}
+			});
+		}
+
+		// ******************************************************************
+
 	}
 }
