@@ -23,6 +23,7 @@ namespace CommandRoutingIntoItemTemplate
 		public MainWindow()
 		{
 			// Test pour ajouter bouton
+			// Modif pour la prod
 			InitializeComponent();
 
 
