@@ -20,18 +20,11 @@ namespace CommandRoutingIntoItemTemplate
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		public void AjouterBouton()
-		{
-			
-		}
-
 		public MainWindow()
 		{
 			// Test pour ajouter bouton
 			// Modif pour la prod
 			InitializeComponent();
-
-
 		}
 	}
 }
