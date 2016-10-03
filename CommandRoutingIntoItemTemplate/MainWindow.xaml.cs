@@ -22,6 +22,8 @@ namespace CommandRoutingIntoItemTemplate
 	{
 		public MainWindow()
 		{
+
+			// Modif pour la prod
 			InitializeComponent();
 
 
